@@ -1,0 +1,171 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/**Primer HTML "Index"**/
+header{
+    background-color: rgba(85, 74, 67, 0.39);
+    position: relative;
+    height: 160px;
+    width: 100%;
+}
+header div a{
+    position: absolute;
+}
+.navBar{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    list-style: none;
+    align-items: flex-end;
+    gap: 50px;
+}
+.navBar li a{
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.navBar li a:hover{
+    color: green;
+    text-decoration-line: underline;
+}
+
+main{
+    background-color: white;
+}
+.portada{
+    font-size: 50px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: green;
+    background-image: url("../assets/img/perros-y-gatos_\ -\ es-posible-que-convivan-juntos_-1-655x368.jpg");
+    background-size: cover;
+    height:600px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+.tienda{
+    padding: 20px;
+    font-size: 40px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.tiendaFotos{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+}
+.adopciones{
+    padding: 20px;
+    font-size: 40px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.adopFotos{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+}
+.adopFotos article div p{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.fotos{
+    height: 350px;
+    width: 350px;
+}
+
+/**Segundo HTML "Nosotros"**/
+.nosotros{
+    background-color: rgb(174, 238, 174);
+}
+.nosotros section{
+    padding: 60px;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.nosFormulario{
+    display: flex;
+    flex-direction: column;
+}
+.boton{
+    color: crimson;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/**Tercer HTML "Donaciones"**/
+.donaciones{
+    background-color: rgb(174, 238, 174);
+    display: flex;
+    flex-direction: row;
+}
+.donaciones section{
+    padding: 50px;
+
+}
+.donacOp{
+    padding: 20px;
+    height: 10cm;
+    width: 15cm;
+    background-color: rgb(243, 131, 91);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25;
+    font-weight: bold;
+}
+.donacOp button{
+    color: crimson;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/**Cuarto HTML "Campañas"**/
+.campañas{
+    background-color: rgb(174, 238, 174);
+}
+.campañas article h2{
+    padding: 50px 50px 10px 50px;
+    font-size: 40px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.campañas article div{
+    padding: 60px;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.campañas article div{
+    display: flex;
+    justify-content: right;
+}
+
+/**Quinto HTML "Ubicacion"**/
+.ubicacion{
+    padding: 70px;
+    background-color: rgb(174, 238, 174);
+}
+.ubicacion section p{
+    padding: 60px;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+}
+.ubicacion section iframe{
+    padding: 50px;
+}
+footer{
+    background-color: rgb(15, 141, 15);
+    height: 50px;
+}
+.iconosRedes{
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
