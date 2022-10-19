@@ -102,9 +102,15 @@
 
 /**Quinto HTML "Ubicacion"**/
 
-.ubicacion section iframe{
+.mapa{
+    width: 100%;
     padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+
 
 /**Footer igual en cada pagina**/
 footer{
