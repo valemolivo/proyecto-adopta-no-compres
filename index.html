@@ -6,77 +6,101 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adopta-no-compres</title>
     <link rel="shortcut icon" href="./assets/img/2385253.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body> 
-    <div>
-        <header>
-            <div>
-                <a href="./index.html"><img src="./assets/img/2385253.png" alt=""></a>
+    <header class="container-fluid">
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./index.html">
+                    <img src="./assets/img/2385253.png" alt="" width="100" height="100">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item d-flex flex-row">
+                        <a class="nav-link active" aria-current="page" href="./pages/nosotros.html">Nosotros</a>
+                        <a class="nav-link active" aria-current="page" href="./pages/donaciones.html">Donaciones</a>
+                        <a class="nav-link active" aria-current="page" href="./pages/campañas.html">Campañas</a>
+                        <a class="nav-link active" aria-current="page" href="./pages/ubicacion.html">Ubicación</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Buscar</button>
+                    </form>
+                </div>
             </div>
-            <nav>
-                <ul class="navBar">
-                    <li><a href="./pages/Nosotros.html">Nosotros</a></li>
-                    <li><a href="./pages/Donaciones.html">Donaciones</a></li>
-                    <li><a href="./pages/Campañas.html">Campañas</a></li>
-                    <li><a href="./pages/Ubicacion.html">Ubicacion</a></li>
-                </ul>
-            </nav>
-        </header>
-        <main>
-            <section class="portada"> <!---parteUno-->
-                <h1>ADOPTA, NO COMPRES!</h1>
-            </section>
-            <section> <!---parteDos--> 
+        </nav>
+    </header>
+    <main>
+        <div class="portada"> <!---parteUno-->
+            <h1 class="titulo">ADOPTA, NO COMPRES!</h1>
+        </div>
+        <!--tienda-->
+        <section class="tiendaFotos">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                 <h2 class="tienda">Tienda</h2>
-                <section class="tiendaFotos">
-                    <div>
-                        <img src="./assets/img/233951-e87588c0355c4b901b16501311179848-1024-1024.jpg" alt="">
-                        <div>
-                            <button>Comprar</button>
+                <div class="carousel-inner d-flex justify-content-center">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./assets/img/bebedero.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./assets/img/cama.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./assets/img/rascador.jpg" class="d-block w-100" alt="...">
                         </div>
                     </div>
-                    <div>
-                        <img src="./assets/img/54c3954ed9f0bed7b7608c0dc41050ed.jpg" alt="">
-                        <div>
-                            <button>Comprar</button>
-                        </div>
-                    </div>
-                    <div>
-                        <img src="./assets/img/images.jpg" alt="">
-                        <div>
-                            <button>Comprar</button>
-                        </div>
-                    </div>
-                </section>
-            </section>
-            <section> <!---parteTres-->
-                <h2 class="adopciones">Adopciones</h2>
-                <section class="adopFotos">
-                    <article class="fotos">
-                        <h3>Gala</h3>
-                        <div>
-                            <img src="./assets/img/gti.jpg" alt="">
-                            <p>Gata castrada de aproximadamente dos años. Busca una familia para siempre.</p>
-                        </div>
-                    </article>
-                    <article class="fotos">
-                        <h3>Pancho</h3>
-                        <div>
-                            <img src="./assets/img/prro.jpg" alt="">
-                            <p>Perro adulto. castrado pero muy jugueton. Busca familia con otro perro preferentemente.</p>
-                        </div>
-                    </article>
-            </section>
-        </main>
-        <footer>
-            <div class="iconosRedes">
-                <a href="https://facebook.com/" target="_blank"><img src="./assets/img/fb.png" alt=""></a>
-                <a href="https://instagram.com/" target="_blank"><img src="./assets/img/instagram.png" alt=""></a>
-                <a href="https://twitter.com/" target="_blank"><img src="./assets/img/tw.png" alt=""></a>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
-        </footer>
-    </div>
+        </section>
+        <!--tarjetas-->
+        <section class="cardsAdop">
+            <h2 class="adopciones">Adopciones</h2>
+            <div class="row row-cols-1 row-cols-md-3 g-4 d-flex justify-content-center">
+                <div class="col">
+                    <div class="card">
+                        <img src="./assets/img/gti.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Gala</h5>
+                            <p class="card-text">Gata castrada de aproximadamente dos años. Busca una familia para siempre.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="./assets/img/prro.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Pancho</h5>
+                            <p class="card-text">Perro adulto, castrado y jugueton. Busca familia con otro perro preferentemente.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="container-fluid">
+        <div class="iconosRedes">
+            <a href="https://facebook.com/" target="_blank"><img src="./assets/img/fb.png" alt=""></a>
+            <a href="https://instagram.com/" target="_blank"><img src="./assets/img/instagram.png" alt=""></a>
+            <a href="https://twitter.com/" target="_blank"><img src="./assets/img/tw.png" alt=""></a>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>    
+</body>
 </body>
 </html>
 
