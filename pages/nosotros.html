@@ -34,38 +34,42 @@
             </div>
         </nav>
     </header>
-    <main class="nosotros">
+    <main class="container-fluid">
+        <div class="nosotros">
         <section>
-            <p>
+            <p class="lead">
                 Somos una organizacion sin fines de lucro que no recibe subsidios, aportes de empresas, o alimento balanceado de ninguna compañía, no tiene cuotas ni socios. 
 Se puede ser padrino / madrina del refugio, o de un perrito que desees proteger en particular, a voluntad: no hay montos fijos y la frecuencia de la ayuda también es voluntaria.
 El objetivo principal de la organización es la concientización de la sociedad. Las ideas que se difunden a través del accionar diario del refugio son las del respeto irrestricto por la vida y la de que el bienestar de los animales se puede lograr si la sociedad se involucra y los sentimientos de piedad se traducen en acciones concretas.
             </p>
         </section>
         <section>
-            <h2>Sumate!</h2>
+            <h2 class="h2">Sumate!</h2>
             <form action="" method="post" enctype="">
                 <fieldset class="nosFormulario">
                     <legend>Datos personales</legend>
-                    <label for="nombre">
-                        <span>¿Como te llamas?</span>
-                        <input type="text" id="nombre" placeholder="Escribi aca tu nombre">
-                    </label>
-                    <label for="direccion">
-                        <span>¿Donde vivis?</span>
-                        <input type="text" id="direccion" placeholder="Escribi aca tu direccion">
-                    </label>
-                    <label for="telefono">
-                        <span>¿Cual es tu telefono?</span>
-                        <input type="text" id="telefono" placeholder="Escribi aca tu numero">
-                    </label>
-                    <label for="email">
-                        <span>¿Cual es tu mail?</span>
-                        <input type="text" id="email" placeholder="Escribi aca tu mail">
-                    </label>
-                    <input class="boton" type="submit" value="Enviar">
+                    <div class="input-group flex-nowrap">
+                        <span class="input-group-text" id="addon-wrapping">¿Como te llamas?</span>
+                        <input type="text" class="form-control" placeholder="Escribi aca tu nombre" aria-label="Username" aria-describedby="addon-wrapping">
+                    </div>
+                    <div class="input-group flex-nowrap">
+                        <span class="input-group-text" id="addon-wrapping">¿Donde vivis?</span>
+                        <input type="text" class="form-control" placeholder="Escribi aca tu direccion" aria-label="Username" aria-describedby="addon-wrapping">
+                    </div>
+                    <div class="input-group flex-nowrap">
+                        <span class="input-group-text" id="addon-wrapping">Telefono</span>
+                        <input type="text" class="form-control" placeholder="Escribi aca tu numero" aria-label="Username" aria-describedby="addon-wrapping">
+                    </div>
+                    <div class="input-group flex-nowrap">
+                        <span class="input-group-text" id="addon-wrapping">¿Cual es tu mail?</span>
+                        <input type="text" class="form-control" placeholder="Escribi aca tu mail" aria-label="Username" aria-describedby="addon-wrapping">
+                    </div>
+                    <div class="d-grid gap-2">
+                        <button class="btn btn-outline-secondary" type="button">Enviar</button>
+                    </div>
                 </fieldset>
         </section>
+        </div>
     </main>
     <footer class="container-fluid">
         <div class="iconosRedes">

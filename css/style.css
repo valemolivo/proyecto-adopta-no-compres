@@ -18,10 +18,11 @@
     flex-direction: column;
     list-style: none;
 }
-.nav-item a:hover{
-    text-decoration-line: underline;
+
+.navbar-nav li a {
     color: green;
 }
+
 /**Primer HTML "Index"**/
 .portada {
     font-size: 50px;
@@ -50,7 +51,7 @@
     background-color: rgb(174, 238, 174);
 }
 .nosotros section{
-    padding: 60px;
+    padding: 30px;
     font-size: 30px;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -58,22 +59,19 @@
     display: flex;
     flex-direction: column;
 }
-.boton{
+.btn-outline-secondary{
     color: crimson;
     font-size: 30px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 /**Tercer HTML "Donaciones"**/
-.donaciones{
+.row-cols-1{
     background-color: rgb(174, 238, 174);
-    display: flex;
-    flex-direction: row;
+    height: 100vh;
+    width: 100%;
 }
-.donaciones section{
-    padding: 50px;
 
-}
 .donacOp{
     padding: 20px;
     height: 10cm;
@@ -111,6 +109,12 @@
 
 /**Quinto HTML "Ubicacion"**/
 
+.fondoUbic {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    background-color: rgb(174, 238, 174);
+}
 .mapa{
     width: 100%;
     padding: 50px;
