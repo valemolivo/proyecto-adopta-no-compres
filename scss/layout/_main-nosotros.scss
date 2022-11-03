@@ -1,0 +1,19 @@
+.nosotros {
+    background-color: $background-principal;
+  
+    section {
+      padding: 30px;
+      font-size: 30px;
+    }
+  }
+  
+  .nosFormulario {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .btn-outline-secondary {
+    color: crimson;
+    font-size: 30px;
+  }
+  

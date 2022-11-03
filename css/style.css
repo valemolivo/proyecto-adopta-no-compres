@@ -1,133 +1,247 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-
-/**Header igual en cada html**/
 
 .navbar-collapse {
-    flex-basis: 100%;
-    flex-grow: 1;
-    align-items: center;
+  flex-basis: 100%;
+  flex-grow: 1;
+  align-items: center;
 }
+
 .navbar-nav {
-    text-decoration: none;
-    font-size: 25px;
-    display: flex;
-    flex-direction: column;
-    list-style: none;
+  text-decoration: none;
+  font-size: 25px;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
 }
-
 .navbar-nav li a {
-    color: green;
+  color: green;
 }
 
-/**Primer HTML "Index"**/
+.navbar-brand {
+  -webkit-animation: jello-horizontal 0.9s both;
+  animation: jello-horizontal 0.9s both;
+}
+
+@-webkit-keyframes jello-horizontal {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+  30% {
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+    transform: scale3d(1.25, 0.75, 1);
+  }
+  40% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+    transform: scale3d(0.75, 1.25, 1);
+  }
+  50% {
+    -webkit-transform: scale3d(1.15, 0.85, 1);
+    transform: scale3d(1.15, 0.85, 1);
+  }
+  65% {
+    -webkit-transform: scale3d(0.95, 1.05, 1);
+    transform: scale3d(0.95, 1.05, 1);
+  }
+  75% {
+    -webkit-transform: scale3d(1.05, 0.95, 1);
+    transform: scale3d(1.05, 0.95, 1);
+  }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+@keyframes jello-horizontal {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+  30% {
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+    transform: scale3d(1.25, 0.75, 1);
+  }
+  40% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+    transform: scale3d(0.75, 1.25, 1);
+  }
+  50% {
+    -webkit-transform: scale3d(1.15, 0.85, 1);
+    transform: scale3d(1.15, 0.85, 1);
+  }
+  65% {
+    -webkit-transform: scale3d(0.95, 1.05, 1);
+    transform: scale3d(0.95, 1.05, 1);
+  }
+  75% {
+    -webkit-transform: scale3d(1.05, 0.95, 1);
+    transform: scale3d(1.05, 0.95, 1);
+  }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+footer {
+  background-color: rgb(15, 141, 15);
+  height: 50px;
+}
+
+.iconosRedes {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
 .portada {
-    font-size: 50px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: green;
+  font-size: 250px;
+  color: green;
 }
-.tiendaFotos{
-    padding: 30px;
-}
-.tienda{
-    padding: 20px;
-    font-size: 40px;
-    text-align: center;
-}
-.cardsAdop{
-    padding: 20px;
-}
-.adopciones{
-    padding: 30px;
-    font-size: 40px;
-    text-align: center;
+.portada .titulo {
+  -webkit-animation: text-shadow-drop-center 0.6s both;
+  animation: text-shadow-drop-center 0.6s both;
 }
 
-/**Segundo HTML "Nosotros"**/
-.nosotros{
-    background-color: rgb(174, 238, 174);
+@-webkit-keyframes text-shadow-drop-center {
+  0% {
+    text-shadow: 0 0 0 rgba(0, 0, 0, 0);
+  }
+  100% {
+    text-shadow: 0 0 18px rgba(0, 0, 0, 0.35);
+  }
 }
-.nosotros section{
-    padding: 30px;
-    font-size: 30px;
-    font-family: Arial, Helvetica, sans-serif;
+@keyframes text-shadow-drop-center {
+  0% {
+    text-shadow: 0 0 0 rgba(0, 0, 0, 0);
+  }
+  100% {
+    text-shadow: 0 0 18px rgba(0, 0, 0, 0.35);
+  }
 }
-.nosFormulario{
-    display: flex;
-    flex-direction: column;
-}
-.btn-outline-secondary{
-    color: crimson;
-    font-size: 30px;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-/**Tercer HTML "Donaciones"**/
-
-.donacOp{
-    padding: 20px;
-    height: 10cm;
-    width: 15cm;
-    background-color: rgb(243, 131, 91);
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 25;
-    font-weight: bold;
-}
-.donacOp button{
-    color: crimson;
-    font-size: 15px;
-    font-family: Arial, Helvetica, sans-serif;
+.tiendaFotos .cardsAdop {
+  padding: 50px;
 }
 
-/**Cuarto HTML "Campañas"**/
-
-.campaña{
-    padding: 25px;
-    font-size: 40px;
-    text-align: center;
+.tienda {
+  padding: 20px;
+  font-size: 40px;
+  text-align: center;
 }
 
-.tipoCampaña{
-    padding: 35px;
+.adopciones {
+  padding: 30px;
+  font-size: 40px;
+  text-align: center;
 }
 
-.tipoCampaña h2{
-    padding: 20px;
+.nosotros {
+  background-color: rgb(180, 224, 180);
+}
+.nosotros section {
+  padding: 30px;
+  font-size: 30px;
 }
 
-.video{
-    min-height: 270px;
+.nosFormulario {
+  display: flex;
+  flex-direction: column;
 }
 
-/**Quinto HTML "Ubicacion"**/
-
-.fondoUbic {
-    margin: 0;
-    border: 0;
-    padding: 0;
-    background-color: rgb(174, 238, 174);
+.btn-outline-secondary {
+  color: crimson;
+  font-size: 30px;
 }
-.mapa{
+
+.donacion {
+  background-color: rgb(180, 224, 180);
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 1fr;
+  grid-template-areas: "box1" "box2";
+}
+.donacion .box-1 {
+  grid-area: box1;
+  padding: 30px;
+}
+.donacion .box-2 {
+  grid-area: box2;
+  padding: 30px;
+}
+
+@media (min-width: 992px) {
+  .donacion {
     width: 100%;
-    padding: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    height: 500px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "box1 box2";
+  }
+}
+.donacOp {
+  padding: 20px;
+  height: 10cm;
+  width: 15cm;
+  font-size: 25px;
+  font-weight: bold;
 }
 
-
-
-/**Footer igual en cada pagina**/
-footer{
-    background-color: rgb(15, 141, 15);
-    height: 50px;
+button {
+  color: crimson;
+  font-size: 15px;
 }
-.iconosRedes{
-    padding: 10px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+
+.campaña {
+  background-color: rgb(180, 224, 180);
 }
+
+.tipoCampaña {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+}
+.tipoCampaña h2, .tipoCampaña p {
+  padding: 10px;
+  text-align: center;
+}
+
+.video {
+  min-height: 270px;
+}
+
+@media (min-width: 992px) {
+  .video {
+    width: 100%;
+    height: 100uv;
+  }
+}
+.fondoUbic {
+  background-color: rgb(180, 224, 180);
+}
+
+.textUbic {
+  padding: 25px;
+}
+
+.fotosUbic {
+  width: 80%;
+  height: 80%;
+  padding: 20px;
+  margin: 0;
+}
+
+.mapa {
+  width: 100%;
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*# sourceMappingURL=style.css.map */
