@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Atención veterinaria y castraciones gratuitas.">
-    <title>Campañas | Adopta-no-compres</title>
+    <title>Registración | Adopta-no-compres</title>
     <link rel="shortcut icon" href="../assets/img/2385253.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
@@ -36,39 +36,37 @@
         </nav>
     </header>
     <main class="container-fluid m-0 p-0">
-        <div class="campaña">
-            <section class="tipoCampaña">
-                <h2 class="h2">Atencion veterinaria gratuita</h2>
-                <div>
-                    <p class="lead">
-Si queres realizarle una atención veterinaria, ahora podés solicitar un turno de manera online. Los viernes de cada semana a las 10hs se habilitan las agendas del fin de semana y de la semana siguiente. 
-                    </p>
-                    <div  class="d-flex justify-content-center p-2">
-                        <a href="./turnos.html">
-                            <button type="button" class="btn btn-outline-success" alt="Sacar turno">Sacar turno</button>
-                        </a>
-                    </div>
-                    <img class="campFoto" src="../assets/img/descarga.jpg" alt="Fotos de la campaña de atención veterinaria" style="width:80%;">
-                </div>
-            </section>
-            <section class="tipoCampaña">
-                <h2 class="h2">Castraciones gratuitas</h2>
-                <div>
-                    <p class="lead">
-Consultá las agendas para conocer qué días se darán turnos para castración. Regístrate y seleccioná el día, completá el formulario y una vez confirmada la operación seguí las indicaciones que llegarán a tu cuenta de mail.
-                    </p>
-                    <div  class="d-flex justify-content-center p-2">
-                        <a href="./registracion.html">
-                            <button type="button" class="btn btn-outline-success" alt="Registrate">Registrate</button>
-                        </a>
-                    </div>
-                    <div class="video">
-                        <div class="ratio ratio-16x9">               
-                            <iframe class="video" src="https://www.youtube.com/embed/xPR62MCt6-0" title="CAMPAÑA DE CASTRACIÓN GRATUITA EN PARQUE SAN MARTÍN" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="registracion">
+                <h2 class="h2 p-4">Registrate!</h2>
+                <div class="d-flex justify-content-center p-1">
+                <form action="" method="post" enctype="">
+                    <fieldset class="regFormulario">
+                        <legend>Datos personales</legend>
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Nombre y apellido</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1">
                         </div>
-                    </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Zona de residencia</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Localidad">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Telefono</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Celular o fijo">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlTextarea1" class="form-label">Caracteristicas del animal</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+                        <div class="d-grid gap-2">
+                            <button class="btn btn-outline-secondary" type="button">Enviar</button>
+                        </div>
+                    </fieldset>
                 </div>
-            </section>
         </div>
     </main>   
     <footer class="container-fluid">
